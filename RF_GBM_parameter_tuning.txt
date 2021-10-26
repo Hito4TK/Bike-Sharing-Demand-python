@@ -1,0 +1,78 @@
+★元ファイル
+Bike-Sharing-Demand-python/FeatureEngineeringAndModeling_gbm.ipynb
+
+20211026 hyper parameter tuning for GBM
+
+@@@@@@@@@@@@@@@@@@@@@@@@@@@
+
+
+★1★
+n_est: 100  l_rate:0.1  min_sam_leaf:10  subsample:0.7  max_dep:5★★
+0.3500989386575082
+　↓
+n_est: 100  l_rate:0.1  min_sam_leaf:10  subsample:0.7  max_dep:5
+0.3500989386575082
+gbm_pred.shape: (2286,)   gbm_actual.shape: (2286,)   gbm_rmsle: 0.3500989386575082
+n_est: 100  l_rate:0.1  min_sam_leaf:10  subsample:0.7  max_dep:5
+★RF_Best（'output2/submit_rf_20211026_3.csv'）
+→blend後のスコア：best_score: 0.34033601468306535, best_rate: {'i': 0.31, 'j': 0.07}
+→submitのスコア：0.38251
+
+★RF_Second（n_est: 1000  max_dep:8  min_sam:5　0.4155031282623868）
+→blend後のスコア：best_score: 0.34210181545620555, best_rate: {'i': 0.15, 'j': 0.13}
+→submitのスコア：0.38884
+
+
+★2★
+n_est: 100  l_rate:0.1  min_sam_leaf:10  subsample:0.8  max_dep:5★★
+0.34826644298068254
+　↓
+n_est: 100  l_rate:0.1  min_sam_leaf:10  subsample:0.8  max_dep:5
+0.34826644298068254
+gbm_pred.shape: (2286,)   gbm_actual.shape: (2286,)   gbm_rmsle: 0.34826644298068254
+n_est: 100  l_rate:0.1  min_sam_leaf:10  subsample:0.8  max_dep:5
+★RF_Best（'output2/submit_rf_20211026_3.csv'）
+→blend後のスコア：best_score: 0.33827380450757516, best_rate: {'i': 0.26, 'j': 0.06}
+→submitのスコア：0.38639
+
+★RF_Second（n_est: 1000  max_dep:8  min_sam:5　0.4155031282623868）
+→blend後のスコア：best_score: 0.3402557497247134, best_rate: {'i': 0.26, 'j': 0.06}
+→submitのスコア：0.39019
+
+
+
+★3★
+n_est: 150  l_rate:0.1  min_sam_leaf:10  subsample:0.7  max_dep:5★★★★★
+0.35486932287327916
+　↓
+n_est: 150  l_rate:0.1  min_sam_leaf:10  subsample:0.7  max_dep:5
+0.35486932287327916
+gbm_pred.shape: (2286,)   gbm_actual.shape: (2286,)   gbm_rmsle: 0.35486932287327916
+n_est: 150  l_rate:0.1  min_sam_leaf:10  subsample:0.7  max_dep:5
+★RF_Best（'output2/submit_rf_20211026_3.csv'）
+→blend後のスコア：best_score: 0.341169814266234, best_rate: {'i': 0.3, 'j': 0.09}
+→submitのスコア：0.38148
+
+★RF_Second（n_est: 1000  max_dep:8  min_sam:5　0.4155031282623868）
+→blend後のスコア：best_score: 0.342862328145168, best_rate: {'i': 0.24, 'j': 0.09}
+→submitのスコア：0.38547
+
+
+
+★4★
+n_est: 150  l_rate:0.1  min_sam_leaf:10  subsample:0.8  max_dep:5★★
+0.35243182933360423
+　↓
+n_est: 150  l_rate:0.1  min_sam_leaf:10  subsample:0.8  max_dep:5
+0.35243182933360423
+gbm_pred.shape: (2286,)   gbm_actual.shape: (2286,)   gbm_rmsle: 0.35243182933360423
+n_est: 150  l_rate:0.1  min_sam_leaf:10  subsample:0.8  max_dep:5
+★RF_Best（'output2/submit_rf_20211026_3.csv'）
+→blend後のスコア：best_score: 0.33977939489470094, best_rate: {'i': 0.23, 'j': 0.11}
+→submitのスコア：0.38566
+
+★RF_Second（n_est: 1000  max_dep:8  min_sam:5　0.4155031282623868）
+→blend後のスコア：best_score: 0.3415766460594261, best_rate: {'i': 0.26, 'j': 0.06}
+→submitのスコア：0.38887
+
+
